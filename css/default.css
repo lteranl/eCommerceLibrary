@@ -57,3 +57,6 @@ button:active {
 .purple {
     color: var(--purple);
 }
+.no-cursor {
+    cursor: no-drop;
+}
