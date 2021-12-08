@@ -35,6 +35,42 @@
                             >
                         </li>
                     </ul>
+                    <button class="btn__menu" onclick="openMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="menu__backdrop">
+                        <button
+                            class="btn__menu btn__menu--close"
+                            onclick="closeMenu()"
+                        >
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                                <a
+                                    class="menu__link"
+                                    onclick="closeMenu()"
+                                    href="#"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="menu__list">
+                                <a
+                                    class="menu__link"
+                                    onclick="closeMenu()"
+                                    href="#features"
+                                    >Books</a
+                                >
+                            </li>
+                            <li class="menu__list">
+                                <a
+                                    class="menu__link no-cursor"
+                                    onclick="closeMenu()"
+                                    >Contact</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
             <header>
@@ -47,7 +83,9 @@
                             Find your dream book with
                             <span class="purple">Library</span>
                         </h2>
-                        <button class="btn">Browse Books</button>
+                        <a href="#features"
+                            ><button class="btn">Browse Books</button></a
+                        >
                     </div>
                     <figure class="header__img--wrapper">
                         <img
@@ -468,7 +506,7 @@
                         >About</a
                     >
                     <a
-                        href="#"
+                        href="#features"
                         class="
                             footer__social--link
                             link__hover-effect link__hover-effect--white
@@ -494,5 +532,7 @@
                 </div>
             </div>
         </footer>
+
+        <script src="./js/index.js"></script>
     </body>
 </html>

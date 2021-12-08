@@ -1,0 +1,8 @@
+@media (max-width: 768px) {
+    .nav__links {
+        display: none;
+    }
+    .btn__menu {
+        display: block;
+    }
+}
