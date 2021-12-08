@@ -180,3 +180,58 @@ header {
 .section__btn {
     text-align: center;
 }
+/* footer */
+footer {
+    background-color: #242424;
+}
+.footer__social--list {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6% 0;
+}
+.footer__logo {
+    margin-bottom: 20px;
+    display: flex;
+}
+.footer__logo--img {
+    filter: grayscale(1) invert(1);
+    width: 200px;
+    height: 150px;
+}
+.footer__social--link,
+.footer__copyright,
+.footer__logo--popper {
+    color: var(--white);
+}
+.footer__social--link {
+    transition: all 300ms ease-in-out;
+}
+.footer__social--link:hover {
+    color: var(--purple);
+}
+.footer__anchor {
+    position: relative;
+}
+.footer__logo--popper {
+    color: var(--purple);
+    position: absolute;
+    left: calc(100% / 1.4);
+    top: calc(100% / 3);
+    font-weight: 700;
+    font-size: 20px;
+    opacity: 0;
+    transition: transform 800ms, opacity 650ms;
+}
+.footer__anchor:hover .footer__logo--popper {
+    transform: translateX(70px);
+    opacity: 1;
+}
