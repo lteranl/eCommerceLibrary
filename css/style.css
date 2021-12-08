@@ -1,7 +1,4 @@
 /* nav bar */
-#landing {
-    background-color: rgba(115, 66, 214, 0.1);
-}
 nav {
     height: 80px;
     display: flex;
@@ -35,6 +32,61 @@ nav {
 .nav__link--primary:hover {
     text-decoration: none;
 }
+.btn__menu {
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    color: var(--purple);
+    display: none;
+}
+.menu__backdrop {
+    position: absolute;
+    background-color: #242424;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+    height: 100vh;
+}
+.menu--open .menu__backdrop {
+    visibility: visible;
+    opacity: 1;
+}
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu__list {
+    padding: 32px;
+}
+.menu__link {
+    color: var(--white);
+    font-size: 40px;
+}
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: var(--white);
+}
+/* landing */
+#landing {
+    background-color: rgba(115, 66, 214, 0.1);
+}
 header {
     height: calc(90vh + 150px);
 }
@@ -63,7 +115,7 @@ header {
 .header__img--wrapper {
     display: flex;
     justify-content: center;
-    padding: 40px 24px 75px;
+    padding: 60px 24px 75px;
 }
 /* HIGHLIGHTS */
 #highlights {
