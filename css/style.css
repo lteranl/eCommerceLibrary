@@ -168,3 +168,15 @@ header {
     padding-right: 6px;
     color: #989797;
 }
+/* recent */
+#recent .books {
+    flex-wrap: wrap;
+}
+/* explore */
+#explore {
+    background-color: rgba(115, 66, 214, 0.1);
+    padding: 32px;
+}
+.section__btn {
+    text-align: center;
+}
