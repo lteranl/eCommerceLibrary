@@ -32,4 +32,20 @@ const renderBooks = (filter) => {
     booksWrapper.innerHTML = booksHtml;
 };
 
+//full star will be added if rating int and half star if not
+const ratingsHTML = (rating) => {
+    let ratingHTML = "";
+    for (let i = 0; i < Math.floor(rating); i++) {
+        ratingHTML += '<i class="fas fa-star"></i>';
+    }
+    if (!Number.isInteger(rating)) {
+        ratingHTML += '<i class="fas fa-star-half-alt"></i>';
+    }
+    return ratingHTML;
+};
+// getting LOW_TO_HIGH, HIGH_TO_LOW, RATINGS value from the event
+const filterBooks = (event) => {
+    renderBooks(event.target.value);
+};
+
 renderBooks();
