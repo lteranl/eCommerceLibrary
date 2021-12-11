@@ -191,6 +191,7 @@ header {
 .book {
     width: 25%;
     padding: 24px;
+    text-align: left;
 }
 .book__img {
     width: 100%;
