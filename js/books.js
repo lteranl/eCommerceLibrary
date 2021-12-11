@@ -32,7 +32,18 @@ const renderBooks = (filter) => {
     booksWrapper.innerHTML = booksHtml;
 };
 
-//full star will be added if rating int and half star if not
+// display sales price, if no sales price display original price
+
+const priceHTML = (originalPrice, salePrice) => {
+    if (!salePrice) {
+        return `${originalPrice.toFixed(2)}`;
+    } else {
+        return `<span class="book__price--normal">$${originalPrice.toFixed(
+            2
+        )}</span>$${salePrice.toFixed(2)}`;
+    }
+};
+// full star will be added if rating int and half star if not
 const ratingsHTML = (rating) => {
     let ratingHTML = "";
     for (let i = 0; i < Math.floor(rating); i++) {
