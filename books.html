@@ -90,7 +90,7 @@
                             <h2 class="section__title books__header--title">
                                 All <span class="purple">Books</span>
                             </h2>
-                            <select id="filter">
+                            <select id="filter" onchange="filterBooks(event)">
                                 <option value="" disabled selected>Sort</option>
                                 <option value="LOW_TO_HIGH">
                                     Price, Low to High
@@ -171,6 +171,7 @@
             </div>
         </footer>
 
+        <script src="./js/data.js"></script>
         <script src="./js/index.js"></script>
         <script src="./js/books.js"></script>
     </body>
