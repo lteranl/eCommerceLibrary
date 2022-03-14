@@ -28,9 +28,12 @@ nav {
 .nav__link--primary {
     border: 2px solid var(--purple);
     border-radius: 10px;
+    transition: all 0.6s ease-in-out;
 }
 .nav__link--primary:hover {
     text-decoration: none;
+    background-color: var(--purple);
+    color: #fff;
 }
 .btn__menu {
     background-color: transparent;
