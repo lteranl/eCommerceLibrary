@@ -1,8 +1,9 @@
 # eCommerceLibrary
 
--   With Prettier (for styling)
+-   With Prettier (for formatting)
 -   With ESLint (using the recommended rules)
 -   With HTMLHint (for HTML Linting)
+-   with Live Server (viewing changes live)
 
 # website live link
 
