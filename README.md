@@ -1,5 +1,7 @@
 # eCommerceLibrary
 
+Ecommerce Library is a project that is collecting books to sell. The purpose of this project is to provide people with an easy way to find and buy the books they are looking for. We are constantly adding new titles to our collection, so be sure to check back often!
+
 -   With Prettier (for formatting)
 -   With ESLint (using the recommended rules)
 -   With HTMLHint (for HTML Linting)
